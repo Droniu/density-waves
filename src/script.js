@@ -75,11 +75,9 @@ const generateGalaxy = () => {
   const colorInside = new THREE.Color(params.insideColor);
   const colorOutside = new THREE.Color(params.outsideColor);
 
-  const possibleTilts = [
-    ...Array(params.branches)
-      .keys()
-      .map((i) => (i * Math.PI * 2) / params.branches),
-  ];
+  const possibleTilts = [...Array(params.branches).keys()].map(
+    (i) => (i * Math.PI * 2) / params.branches
+  );
   for (let i = 0; i < params.count; i++) {
     const i3 = i * 3;
     const radius = (i % params.branches) / 10;
