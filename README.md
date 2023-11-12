@@ -3,6 +3,6 @@
 
 In order to start:
 ```
-bun install
-bun run dev
+npm install
+npm run dev
 ```
